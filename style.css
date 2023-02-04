@@ -17,8 +17,16 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 50px;
   position: static;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1.4em;
+  font-weight: 300;
 }
 
 .navbar-links {
@@ -30,15 +38,8 @@ ul {
   color: white;
   padding: 0px 10px;
   text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 500;
-}
-
-.navbar h1 {
-  font-size: 1.3em;
-  margin-left: 30px;
-  font-weight: 500;
-  cursor: pointer;
+  font-size: 1.0em;
+  font-weight: 100;
 }
 
 .after-header {
@@ -54,9 +55,13 @@ ul {
 }
 
 .todo-list {
-  background-color: #1d8fc8;
+  background-color: #25b5fe;
   color: white;
   text-align: center;
+}
+
+.todo-list li:nth-child(2n) {
+  background-color: #0086c9;
 }
 
 .done-tasks {
@@ -68,11 +73,11 @@ ul {
   background-color: #4ddc56;
 }
 
-.ongoing>a {
+.ongoing a {
   color: white;
   text-decoration: none;
   padding: 0px 20px;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .ongoing {
@@ -102,4 +107,36 @@ ul {
   font-variant: small-caps;
   color: rgb(0, 0, 90);
   text-align: center;
+}
+
+#addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#addButton a {
+  background-color: #22a3e4;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+#addButton a:hover {
+  transition: 500ms;
+  background-color: #1d8fc8;
+}
+
+#addButton input {
+  margin: 20px 0px;
+  width: 300px;
+  font-size: 2em;
+  display: none;
+}
+
+a {
+  cursor: pointer;
 }
