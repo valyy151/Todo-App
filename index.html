@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <h1>Todo App</h1>
-        <div class="navbar-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Support</a>
-          <a href="#">Login | Sign Up</a>
-        </div>
-      </nav>
-    </header>
-    <div class="after-header"><h2>your tasks for today:</h2></div>
-    <section class="todo-list">
-      <ul>
-        <li class="ongoing">
-          <a href="#">&#10003;</a>
-          <p>Groceries</p>
-          <a href="#">&times;</a>
-        </li>
-      </ul>
-    </section>
-    <div class="after-section">
-      <h2>completed tasks:</h2>
-    </div>
-    <section class="done-tasks">
-      <ul>
-        <li class="finished"><p>Workout</p></li>
-      </ul>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1>Todo App</h1>
+      <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Support</a>
+        <a href="#">Login | Sign Up</a>
+      </div>
+    </nav>
+  </header>
+  <div class="after-header">
+    <h2>your tasks for today:</h2>
+  </div>
+  <section class="todo-list">
+    <ul id="ongoingTasks">
+      <li class="ongoing">
+        <a href="#" class="check">&#10003;</a>
+        <p>Groceries</p>
+        <a href="#" class="remove">&times;</a>
+      </li>
+      <li class="ongoing">
+        <a href="#" class="check">&#10003;</a>
+        <p>Groceries</p>
+        <a href="#" class="remove">&times;</a>
+      </li>
+      <li class="ongoing">
+        <a href="#" class="check">&#10003;</a>
+        <p>Groceries</p>
+        <a href="#" class="remove">&times;</a>
+      </li>
+    </ul>
+  </section>
+  <div class="after-section">
+    <h2>completed tasks:</h2>
+  </div>
+  <section class="done-tasks">
+    <ul id="doneTasks">
+
+    </ul>
+  </section>
+</body>
+
 </html>

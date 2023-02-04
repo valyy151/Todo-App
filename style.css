@@ -64,7 +64,11 @@ ul {
   color: white;
 }
 
-.ongoing > a {
+.done-tasks li:nth-child(2n) {
+  background-color: #4ddc56;
+}
+
+.ongoing>a {
   color: white;
   text-decoration: none;
   padding: 0px 20px;
@@ -84,8 +88,11 @@ ul {
   justify-content: center;
 }
 
+.finished a {
+  display: none;
+}
+
 .after-section {
-  text-align: center;
   margin-top: 250px;
 }
 
@@ -94,4 +101,5 @@ ul {
   font-weight: 300;
   font-variant: small-caps;
   color: rgb(0, 0, 90);
+  text-align: center;
 }
