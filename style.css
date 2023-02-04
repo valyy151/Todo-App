@@ -6,6 +6,20 @@ body {
 ul {
   list-style: none;
   padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+li {
+  width: 600px;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .header {
@@ -13,7 +27,6 @@ ul {
 }
 
 .navbar {
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +35,6 @@ ul {
 }
 
 .navbar a {
-  color: white;
   text-decoration: none;
   margin-left: 30px;
   font-size: 1.4em;
@@ -35,16 +47,14 @@ ul {
 }
 
 .navbar-links a {
-  color: white;
   padding: 0px 10px;
   text-decoration: none;
   font-size: 1.0em;
   font-weight: 100;
 }
 
-.after-header {
+.after-section h2 {
   text-align: center;
-  margin-top: 50px;
 }
 
 .after-header h2 {
@@ -52,21 +62,21 @@ ul {
   font-weight: 300;
   font-variant: small-caps;
   color: rgb(0, 0, 90);
+  text-align: center;
+  margin-top: 50px;
 }
 
-.todo-list {
+.todo-list li:nth-child(1n) {
   background-color: #25b5fe;
-  color: white;
-  text-align: center;
+
 }
 
 .todo-list li:nth-child(2n) {
   background-color: #0086c9;
 }
 
-.done-tasks {
+.done-tasks li:nth-child(1n) {
   background-color: #6dec76;
-  color: white;
 }
 
 .done-tasks li:nth-child(2n) {
@@ -74,8 +84,6 @@ ul {
 }
 
 .ongoing a {
-  color: white;
-  text-decoration: none;
   padding: 0px 20px;
   font-size: 2rem;
 }
@@ -88,13 +96,17 @@ ul {
 }
 
 .finished {
-  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finished a:first-child {
+  visibility: hidden;
 }
 
 .finished a {
-  display: none;
+  font-size: 2em;
 }
 
 .after-section {
@@ -106,7 +118,7 @@ ul {
   font-weight: 300;
   font-variant: small-caps;
   color: rgb(0, 0, 90);
-  text-align: center;
+
 }
 
 #addButton {
@@ -120,7 +132,6 @@ ul {
   background-color: #22a3e4;
   padding: 10px 20px;
   margin-top: 20px;
-  color: white;
   text-decoration: none;
   font-size: 1.4em;
 }
@@ -137,6 +148,10 @@ ul {
   display: none;
 }
 
-a {
-  cursor: pointer;
+.check {
+  padding-left: 20px;
+}
+
+.remove {
+  padding-right: 20px;
 }

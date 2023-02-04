@@ -57,3 +57,9 @@ addButton.addEventListener('click', () => {
     createTask();
   }
 });
+
+textInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' && textInput.value !== '') {
+    createTask();
+  }
+});
