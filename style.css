@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.header {
+  background-color: rgb(79, 179, 212);
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: static;
+}
+
+.navbar-links {
+  margin-right: 30px;
+  cursor: default;
+}
+
+.navbar-links a {
+  color: white;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.navbar h1 {
+  font-size: 1.3em;
+  margin-left: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.after-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.after-header h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: rgb(0, 0, 90);
+}
+
+.todo-list {
+  background-color: #1d8fc8;
+  color: white;
+  text-align: center;
+}
+
+.done-tasks {
+  background-color: #6dec76;
+  color: white;
+}
+
+.ongoing > a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: 2em;
+}
+
+.ongoing {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finished {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.after-section {
+  text-align: center;
+  margin-top: 250px;
+}
+
+.after-section h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: rgb(0, 0, 90);
+}
