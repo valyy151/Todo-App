@@ -23,7 +23,7 @@ a {
 }
 
 .header {
-  background-color: rgb(79, 179, 212);
+  background-color: #22a3e4
 }
 
 .navbar {
@@ -160,7 +160,8 @@ a {
   margin: 150px auto 0 auto;
   line-height: 1.5em;
   font-size: 1.5em;
-  background-image: linear-gradient(to right, #00fffb, #2d6cff);
+  background: rgb(0, 138, 255);
+  background: linear-gradient(180deg, rgba(0, 138, 255, 1) 50%, rgba(0, 198, 255, 1) 100%);
   height: 600px;
   color: white;
   display: flex;
@@ -184,4 +185,26 @@ a {
 
 .aboutDiv a:hover {
   text-decoration: underline;
+}
+
+.supportDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.supportDiv a {
+  background-color: #0086c9;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.supportDiv h2 {
+  margin-bottom: 50px;
+}
+
+.supportDiv input {
+  font-size: 24px;
 }
