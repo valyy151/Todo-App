@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+li {
+  width: 600px;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background-color: rgb(79, 179, 212);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: static;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.navbar-links {
+  margin-right: 30px;
+  cursor: default;
+}
+
+.navbar-links a {
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 1.0em;
+  font-weight: 100;
+}
+
+.after-section h2 {
+  text-align: center;
+}
+
+.after-header h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: rgb(0, 0, 90);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.todo-list li:nth-child(1n) {
+  background-color: #25b5fe;
+
+}
+
+.todo-list li:nth-child(2n) {
+  background-color: #0086c9;
+}
+
+.done-tasks li:nth-child(1n) {
+  background-color: #6dec76;
+}
+
+.done-tasks li:nth-child(2n) {
+  background-color: #4ddc56;
+}
+
+.ongoing a {
+  padding: 0px 20px;
+  font-size: 2rem;
+}
+
+.ongoing {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finished {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finished a:first-child {
+  visibility: hidden;
+}
+
+.finished a {
+  font-size: 2em;
+}
+
+.after-section {
+  margin-top: 250px;
+}
+
+.after-section h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: rgb(0, 0, 90);
+
+}
+
+#addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#addButton a {
+  background-color: #22a3e4;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+#addButton a:hover {
+  transition: 500ms;
+  background-color: #1d8fc8;
+}
+
+#addButton input {
+  margin: 20px 0px;
+  width: 300px;
+  font-size: 2em;
+  display: none;
+}
+
+.check {
+  padding-left: 20px;
+}
+
+.remove {
+  padding-right: 20px;
+}
+
+.about {
+  margin: 150px auto 0 auto;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  background-image: linear-gradient(to right, #00fffb, #2d6cff);
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  width: 600px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.aboutDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 580px;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.aboutDiv a:hover {
+  text-decoration: underline;
+}

@@ -1,4 +1,5 @@
 const express = require('express');
+const internal = require('stream');
 const app = express();
 
 app.use(express.static('public'));
@@ -14,7 +15,12 @@ const loginRouter = require('./routes/login');
 const supportRouter = require('./routes/support');
 
 app.use('/about', aboutRouter);
-app.use('/login', loginRouter);
+app.use('/login', log, loginRouter);
 app.use('/support', supportRouter);
+
+function log(req, res, next) {
+  console.log(req.originalUrl);
+  next();
+}
 
 app.listen(3000);
