@@ -208,3 +208,8 @@ a {
 .supportDiv input {
   font-size: 24px;
 }
+
+#supportSubmitButton {
+  width: 75px;
+  text-align: center;
+}
