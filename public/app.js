@@ -63,13 +63,3 @@ textInput.addEventListener('keydown', (event) => {
     createTask();
   }
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const supportText = document.getElementById('supportText').value;
-  const reportProblem = document.getElementsById('reportProblem');
-
-  reportProblem.addEventListener('submit', function (event) {
-    event.preventDefault();
-    console.log(supportText);
-  });
-});
