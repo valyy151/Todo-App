@@ -6,14 +6,6 @@ router.get('/', (req, res) => {
   res.render('login');
 });
 
-router.get('/register', (req, res) => {
-  res.send('Register');
-});
-
-router.post('/register', (req, res) => {
-  res.send('Register  ');
-});
-
 router
   .route('/:userId')
   .get((req, res) => {
