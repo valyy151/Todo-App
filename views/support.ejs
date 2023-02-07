@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="/style.css" />
-  <script src="/app.js" defer></script>
-</head>
-
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <a href="/">Todo App</a>
-      <div class="navbar-links">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="">Support</a>
-        <a href="/login">Login</a>
-      </div>
-    </nav>
-  </header>
-
-  <div class="supportDiv">
-    <h2>Report a Problem</h2>
-    <form id="reportProblem" method="post" action="/submit">
-      <input type="text" id="supportText" name="message" value="" placeholder="Write here" required>
-      <button type="submit">Submit</button>
-    </form>
+<% <div class="supportDiv">
+  <h2>Report a Problem</h2>
+  <form method="post" action="/support/submit">
+    <input type="text" name="message" placeholder="Write here" required>
+    <button type="submit">Submit</button>
+  </form>
   </div>
-</body>
+  </body>
+  %>
