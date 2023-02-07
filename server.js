@@ -4,7 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-app.set('layout', ' layouts/layout');
+app.set('layout', 'layout');
 
 app.use(express.static('public'));
 app.use(expressLayouts);
@@ -19,5 +19,9 @@ app.use('/index', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/login', loginRouter);
 app.use('/support', supportRouter);
+
+app.get('/', (req, res) => {
+  res.redirect('/index');
+});
 
 app.listen(process.env.PORT || 3000);
