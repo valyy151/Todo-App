@@ -9,6 +9,9 @@ router.get('/submit', (req, res) => {
   res.render('submit');
 });
 
-router.post('/submit', (req, res) => {});
+router.post('/submit', (req, res, next) => {
+  console.log('sanela');
+  next();
+});
 
 module.exports = router;
